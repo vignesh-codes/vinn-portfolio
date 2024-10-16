@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 export const Projects = () => {
 
     return (
-        <div>
+        <div id="projects">
             <motion.h2
                 whileInView={{ opacity: 1, y: 0 }}
                 initial={{ opacity: 0, y: -100 }}

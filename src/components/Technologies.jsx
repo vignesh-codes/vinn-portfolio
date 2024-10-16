@@ -47,12 +47,13 @@ const bottomSideVariants = {
 export const Technologies = () => {
     return (
 
-        <div className='flex flex-wrap gap-4 justify-center'>
+        <div id="skills" className='flex flex-wrap gap-4 justify-center'>
             {/* Tech Stack Header */}
             <motion.h2
                 whileInView={{ opacity: 1, y: 0 }}
                 initial={{ opacity: 0, y: -100 }}
                 transition={{ duration: 1.5 }}
+                viewport={{ once: true }}
                 className='my-7 flex w-full flex-row justify-center text-3xl font-bold p-2'>
                 My Tech Stack
             </motion.h2>
@@ -61,6 +62,7 @@ export const Technologies = () => {
                 initial="initial"
                 whileInView="whileInView"
                 variants={leftSideVariants}
+                viewport={{ once: true }}
                 className='web-tech p-5 rounded-2xl shadow w-full lg:w-1/3'>
                 <h3 className='text-xl mb-4 text-center'>Web Technologies</h3>
                 <div className='flex flex-wrap gap-5 justify-center text-5xl lg:ml-15 lg:mr-15'>
@@ -136,6 +138,7 @@ export const Technologies = () => {
                 initial="initial"
                 whileInView="whileInView"
                 variants={rightSideVariants}
+                viewport={{ once: true }}
                 className='backend-tech p-5 rounded-2xl shadow w-full lg:w-1/3'>
                 <h3 className='text-xl mb-4 text-center'>Backend Technologies</h3>
                 <div className='flex flex-wrap gap-5 justify-center text-5xl lg:ml-15 lg:mr-15'>
@@ -224,6 +227,7 @@ export const Technologies = () => {
                 initial="initial"
                 whileInView="whileInView"
                 variants={bottomSideVariants}
+                viewport={{ once: true }}
                 className='cloud-infra p-5 rounded-2xl shadow w-full lg:w-1/3'>
                 <h3 className='text-xl mb-4 text-center'>Cloud & Infrastructure</h3>
                 <div className='flex flex-wrap gap-5 justify-center text-5xl lg:ml-15 lg:mr-15'>

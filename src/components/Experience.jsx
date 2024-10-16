@@ -17,12 +17,13 @@ export const Experience = () => {
     };
 
     return (
-        <div className='justify-center flex flex-col items-center'>
+        <div id="experience" className='justify-center flex flex-col items-center'>
             <motion.h2 
                 className='my-7 flex justify-center text-3xl font-bold p-2'
                 initial={{ opacity: 0, y: -50 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1.2 }}
+                viewport={{ once: true }}
             >
                 Professional Experience
             </motion.h2>
