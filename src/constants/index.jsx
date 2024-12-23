@@ -1,7 +1,7 @@
-import project1 from "../assets/projects/project-1.webp";
-import project2 from "../assets/projects/project-2.svg";
-import project3 from "../assets/projects/project-3.webp";
-import project4 from "../assets/projects/project-4.webp";
+import pulse_logo from "../assets/projects/project-1.webp";
+import k8sgpt_logo from "../assets/projects/project-2.svg";
+import paas_logo from "../assets/projects/project-3.webp";
+import ecommerce_logo from "../assets/projects/project-4.webp";
 import locoLogo from "../assets/loco-logo.png"
 import acquiaLogo from "../assets/acquia-logo.png";
 import accuknoxLogo from "../assets/accuknox-logo.png";
@@ -56,44 +56,36 @@ export const EXPERIENCES = [
 export const PROJECTS = [
     {
         title: "Pulse Service",
-        image: project1,
+        image: pulse_logo,
         description:
             "An easy to plug into your production service log aggregator. It aggregates user login/logout events via api and puts them to postgres for later analyses.",
         technologies: ["Golang", "Python", "Fluent-bit", "Redis Streams", "Postgresql"],
-        projectLink: "https://github.com/vignesh-codes/project-pulse"
+        link: "https://github.com/vignesh-codes/project-pulse"
     },
     {
         title: "AIOps for Kubernetes - Won the Hackethon @ Acquia",
-        image: project2,
+        image: k8sgpt_logo,
         description:
             "Leveraged K8sGPT (CNCF open-source project) to provide useful insights from container logs and k8s events using OPENAI LLM. Created a k8s watcher script using golang to trigger vulnerability reports periodically and whenever new version application pods are deployed.",
-        technologies: ["Kubernetes", "Docker", "AWS", "Trivy"],
-        projectLink: "https://github.com/k8sgpt-ai/k8sgpt"
+        technologies: ["Golang", "Kubernetes", "Docker", "AWS", "Trivy"],
+        link: "https://github.com/k8sgpt-ai/k8sgpt"
     },
     {
-        title: "DevOps Pipeline Automation Service - In progress",
-        image: project3,
+        title: "PaaS On Kubernetes",
+        image: paas_logo,
         description:
-            "A reliable 24/7 service that automates the deployment of applications to Kubernetes clusters. Allows users to track and manage microservices from the frontend. It uses ArgoCD for continuous deployment on IBM Cloud. It also includes a CI/CD pipeline using GitHub Actions and a monitoring dashboard using Grafana and Prometheus.",
-        technologies: ["Golang", "Python", "Kubernetes", "Docker", "Github", "React", "ArgoCD", "IBM Cloud"],
-        projectLink: "https://github.com/vignesh-codes"
+            "Platform-as-a-Service (PaaS) system built on Kubernetes. The PaaS enables users to manage namespaces, deploy applications, scale resources, and remove deployments using an intuitive interface and robust backend architecture. This system integrates Kubernetes features with custom services to provide automation, isolation, and scalability for user applications (service providers).",
+        technologies: ["Golang", "Typescript", "Kubernetes", "Docker", "Github", "React", "Tailwind CSS", "Github Workflows", "Google Kubernetes Engine"],
+        link: "https://github.com/vignesh-codes/CS9549"
     },
     {
-        title: "Basic Ecommerce Site - In progress",
-        image: project4,
+        title: "Basic Ecommerce Site",
+        image: ecommerce_logo,
         description:
-            "As a part of grad course project, I aim to focus on my frontend skills by developing a fully functional ecommerce site selling laptops and accessories and get hands on with HTML and vanilla CSS. The site has user signup/login, product listing, cart, checkout, and order management features. It uses a microservices architecture and is built using React, Node.js, and MongoDB and deployed on AWS.",
+            "As a part of grad course project, I aim to focus on my frontend skills by developing a fully functional ecommerce site selling laptops and accessories and get hands on with HTML and Tailwind CSS. The site has user signup/login, product listing, cart, checkout, and order management features. It uses a microservices architecture and is built using React, Node.js, and MongoDB and deployed on AWS.",
         technologies: ["HTML", "CSS", "React", "MongoDB",  "Node.js", "AWS"],
-
-        projectLink: "https://github.com/vignesh-codes"
+        link: "https://github.com/vignesh-codes/ECE9065"
     },
-    // {
-    //     title: "Blogging Platform",
-    //     image: project4,
-    //     description:
-    //         "A platform for creating and publishing blog posts, with features like rich text editing, commenting, and user profiles.",
-    //     technologies: ["HTML", "CSS", "Vue.js", "Express", "mySQL"],
-    // },
 ];
 
 export const CONTACT = {
