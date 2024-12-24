@@ -1,11 +1,11 @@
-import pulse_logo from "../assets/projects/project-1.webp";
-import k8sgpt_logo from "../assets/projects/project-2.svg";
-import paas_logo from "../assets/projects/project-3.webp";
-import ecommerce_logo from "../assets/projects/project-4.webp";
-import locoLogo from "../assets/loco-logo.png"
-import acquiaLogo from "../assets/acquia-logo.png";
-import accuknoxLogo from "../assets/accuknox-logo.png";
-import nottinghamUniversityLogo from "../assets/nottingham-university-logo.png"
+import pulse_logo from "../../public/assets/projects/project-1.webp";
+import k8sgpt_logo from "../../public/assets/projects/project-2.svg";
+import paas_logo from "../../public/assets/projects/project-3.webp";
+import ecommerce_logo from "../../public/assets/projects/project-4.webp";
+import locoLogo from "../../public/assets/loco-logo.png"
+import acquiaLogo from "../../public/assets/acquia-logo.png";
+import accuknoxLogo from "../../public/assets/accuknox-logo.png";
+import nottinghamUniversityLogo from "../../public/assets/nottingham-university-logo.png"
 
 export const HERO_CONTENT = () => (
     <div>

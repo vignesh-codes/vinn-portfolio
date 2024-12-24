@@ -1,10 +1,10 @@
 import React, {useEffect} from 'react'
-import profilePic from "../assets/vws-dp.png"
+import profilePic from "../../public/assets/vws-dp.png"
 import { HERO_CONTENT } from '../constants'
 import { motion } from 'framer-motion'
 import { FaExternalLinkAlt } from 'react-icons/fa';
-import nottinghamUniversityLogo from "../assets/nottingham-university-logo.png"
-import westernUniversityLogo from "../assets/western-university-logo.png"
+import nottinghamUniversityLogo from "../../public/assets/nottingham-university-logo.png"
+import westernUniversityLogo from "../../public/../public/assets/western-university-logo.png"
 
 const containerVariants = {
     hidden: { opacity: 0, x: -100 },
