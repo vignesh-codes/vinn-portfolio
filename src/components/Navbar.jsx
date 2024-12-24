@@ -55,7 +55,7 @@ export const Navbar = () => {
 
                 {/* New GalleryGram link */}
                 <motion.a
-                    className='bg-black text-white px-4 py-2 rounded-lg'
+                    className='p-2 rounded-lg'
                     animate={{
                         scale: [1, 1.1, 1], // Scale between 1 and 1.1
                         boxShadow: [
@@ -72,7 +72,7 @@ export const Navbar = () => {
                     href="/gallery"
                     aria-label='GalleryGram'>
                     <div className='flex items-center gap-2'>
-                    <h3 className='text-white'>Vinn's Gallery </h3><FaExternalLinkAlt />
+                    <h3 className='text-black'>Vinn's Gallery </h3><FaExternalLinkAlt />
                     </div>
                     
                 </motion.a>
