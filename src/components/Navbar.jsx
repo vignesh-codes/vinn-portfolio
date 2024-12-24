@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import logo from "../assets/vws-logo.webp";
+import logo from "../../public/assets/vws-logo.webp";
 import { BsTwitter } from 'react-icons/bs';
 import { CgTwitter } from 'react-icons/cg';
 import { FaExternalLinkAlt, FaGithub, FaLinkedin, FaMailBulk, FaMailchimp } from 'react-icons/fa';
