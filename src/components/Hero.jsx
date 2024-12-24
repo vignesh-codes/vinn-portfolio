@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import profilePic from "../assets/vws-dp.png"
 import { HERO_CONTENT } from '../constants'
 import { motion } from 'framer-motion'
@@ -35,7 +35,17 @@ const rightSideVariants = {
 };
 
 export const Hero = () => {
+    useEffect(() => {
+        // If there's a hash in the URL (like #projects), scroll to the element
+        if (window.location.hash) {
+            const element = document.getElementById(window.location.hash.replace('#', ''));
+            if (element) {
+                element.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+    }, []);
     return (
+        
         <div className='pb-4 lg:mb-25'>
             <div className='flex flex-wrap lg:flex-row-reverse'>
                 <div className='w-full lg:w-1/2 flex justify-center lg:p-8'>
